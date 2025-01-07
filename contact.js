@@ -2,7 +2,7 @@ $('#contact_form').submit(function (e) {
 
     e.preventDefault(); // prevent from submitting form directly
 
-    $.ajax({
+    jQuery.ajax({
         url: 'https://docs.google.com/forms/u/2/d/e/1FAIpQLScYDf5PRl5UI07sXEaGJaugq7foo4DbfQfJ9N6j2YLwN6ifAA/formResponse',
         method: 'POST',
         data: $('#contact_form').serializeArray()
