@@ -1,7 +1,6 @@
 .rounded {
-    width: 50%;
-    height: 45%;
-    max-height: 400px;
+    width: 75%;
+    height: 100%;
     overflow: auto;
     margin: auto; 
     margin-top: 10%;
