@@ -29,3 +29,7 @@
 .masonry {
   display: block;
 }
+
+.masonry-item {
+  margin-bottom: 1.5rem;
+}

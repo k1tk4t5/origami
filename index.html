@@ -44,7 +44,9 @@ WRITTEN BY: Katrina Mizuo
     <div class="container">
       <h1 class="jumbotron-heading">Kat's Origami</h1>
       <p class="lead text-muted">Hi! I'm <strong>Katrina Mizuo</strong>, and I've been making origami since middle
-        school. Although it's been one of my biggest passions, I've never actually gathered pictures of what I've made before. Through origami, I've connected with all kinds of people in my professional life, even going so far as to lead a teambuilding origami class in the office. Here have been some of my works over the years.</p>
+        school. Although it's been one of my biggest passions, I've never actually gathered pictures of what I've made
+        before. Through origami, I've connected with all kinds of people in my professional life, even going so far as
+        to lead a teambuilding origami class in the office. Here have been some of my works over the years.</p>
       <p>
         <a title="Connect out my LinkedIn." href="https://www.linkedin.com/in/kmizuo/">
           <strong class="fa-brands fa-linkedin" style="font-size: 2.5em"></strong>
@@ -133,7 +135,8 @@ WRITTEN BY: Katrina Mizuo
         <!-- Card 5 -->
         <div class="col-md-4 masonry-item">
           <div class="card box-shadow">
-            <img class="card-img-top origami-image" src="images/penguin.jpg" alt="Two three-dimensional origami penguins.">
+            <img class="card-img-top origami-image" src="images/penguin.jpg"
+              alt="Two three-dimensional origami penguins.">
             <div class="card-body">
               <p class="card-text">3D origami penguins made with modular pieces folded from many sheets of paper.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -174,6 +177,16 @@ WRITTEN BY: Katrina Mizuo
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script>
+    // Wait for all images in .masonry to load before initializing Masonry
+    const grid = document.querySelector('.masonry');
+    imagesLoaded(grid, () => {
+      new Masonry(grid, {
+        itemSelector: '.masonry-item',
+        percentPosition: true
+      });
+    });
+  </script>
 </body>
 
 </html>
