@@ -31,5 +31,5 @@
 }
 
 .masonry-item {
-  margin-bottom: 1.5rem;
+  transition: transform 0.4s ease;
 }
