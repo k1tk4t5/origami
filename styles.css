@@ -37,3 +37,9 @@
 .icon:hover {
   text-decoration: none;
 }
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
