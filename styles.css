@@ -30,10 +30,6 @@
   display: block;
 }
 
-.masonry-item {
-  transition: transform 0.4s ease;
-}
-
 .icon:hover {
   text-decoration: none;
 }
